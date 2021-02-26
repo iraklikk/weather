@@ -1,0 +1,518 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body, html {
+   width: 100%;
+   height: 100%;
+}
+
+body {
+   color: white;
+   font-family: sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: linear-gradient(to bottom, #869DC9, #E9C1BF);
+}
+
+.container {
+   width: 40%;
+   height: 55%;
+   background-image: linear-gradient(to bottom, #42508F,#6F6599, #BC90A7,#434A74);
+   border-radius: 10px;
+   padding: 1rem;
+}
+
+.skycon {
+   width: 50%;
+   height: 50%;
+   position: relative;
+   margin-top: -15px;
+}
+
+.skycon-two {
+   width: 100%;
+   height: 52%;
+   position: relative;
+}
+
+.a {
+   position: absolute;
+   left: 12%;
+   top: 50px;
+   width: 45px;
+   height: 18px;
+   background: rgb(255, 255, 255, 1);
+   border-radius: 50px;
+}
+
+.a-v2 {
+   position: absolute;
+   left: 25%;
+   top: 40%;
+   width:34px;
+   height: 14px;
+   background: rgb(255, 255, 255, 1);
+   border-radius: 50px;
+}
+
+.b {
+   position: absolute;
+   left: 27%;
+   top: 41px;
+   width: 27px;
+   height: 27px;
+   background: rgb(255, 255, 255, 1);
+   border-radius: 50px;
+}
+
+.b-v2 {
+   position: absolute;
+   left: 46%;
+   top: 21%;
+   width: 22px;
+   height: 22px;
+   background: rgb(255, 255, 255, 1);
+   border-radius: 50px;
+}
+
+.c {
+   position: absolute;
+   left: 20%;
+   top: 32px;
+   width: 27px;
+   height: 27px;
+   background: rgb(255, 255, 255, 1);
+   border-radius: 50px;
+}
+
+.c-v2 {
+   position: absolute;
+   left: 38%;
+   top: 12%;
+   width: 22px;
+   height: 22px;
+   background: rgb(255, 255, 255, 1);
+   border-radius: 50px;
+}
+
+.sun {
+   left: 10%;
+   top: 26px;
+   width: 32px;
+   height: 32px;
+   position: absolute;
+   background: yellow;
+   border-radius: 50px;
+   box-shadow: 0px 0px 14px -3px #000000;
+}
+
+
+.sun-v2 {
+   left: 23%;
+   top: 5%;
+   width: 26px;
+   height: 26px;
+   position: absolute;
+   background: yellow;
+   border-radius: 50px;
+   box-shadow: 0px 0px 14px -3px #000000;
+}
+.rain {
+   position: absolute;
+   top: 70px;
+   left: 18%;
+   width: 2px;
+   height: 12px;
+   transform: rotate(-30deg);
+   background: white;
+   border-radius: 1px;
+}
+
+.rain-v2 {
+   position: absolute;
+   top: 75%;
+   left: 35%;
+   width: 2px;
+   height: 9px;
+   transform: rotate(-30deg);
+   background: white;
+   border-radius: 1px;
+}
+
+.rain-two {
+   left: 25%;
+}
+
+.rain-two-v2 {
+   left: 45%;
+}
+
+.rain-three {
+   left: 32%;
+}
+
+.rain-three-v2 {
+   left: 55%;
+}
+
+.rain-four {
+   left: 39%;
+}
+
+.rain-four-v2 {
+   left: 65%;
+}
+
+.snowflake {
+   position: absolute;
+   top: 70px;
+   left: 58px;
+   width: 2px;
+   height: 4px;
+   background: white;
+   border-radius: 50%;
+}
+
+.snowflake-v2 {
+   position: absolute;
+   top: 75%;
+   left: 35%;
+   width: 2px;
+   height: 4px;
+   background: white;
+   border-radius: 50%;
+}
+
+.snowflake::after {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: white;
+   content: "";
+   transform: rotate(90deg);
+}
+
+.snowflake-v2::after {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: white;
+   content: "";
+   transform: rotate(90deg);
+}
+
+.snowflake-two {
+   left: 73px;
+}
+
+.snowflake-v2-two {
+   left: 50%;
+}
+
+.snowflake-three {
+   left: 88px;
+}
+
+.snowflake-v2-three {
+   left: 65%;
+}
+
+.snowflake-four {
+   left: 63px;
+   top: 79px;
+}
+.snowflake-v2-four {
+   top: 85%;
+   left: 42.5%;
+}
+
+.snowflake-five {
+   left: 78px;
+   top: 79px;
+}
+
+.snowflake-v2-five {
+   top: 85%;
+   left: 57.5%;
+}
+
+.snowflake-six {
+   left: 93px;
+   top: 79px;
+}
+
+.snowflake-v2-six {
+   top: 85%;
+   left: 72.5%;
+}
+
+.lightning-top {
+   position: absolute;
+   top: 71px;
+   left: 60px;
+   background: white;
+   width: 3px;
+   height: 12px;
+   transform: rotate(-30deg);
+   border-radius: 2px;
+}
+
+.lightning-top-v2 {
+   position: absolute;
+   top: 75%;
+   left: 35%;
+   background: white;
+   width: 2px;
+   height: 6px;
+   transform: rotate(-30deg);
+   border-radius: 2px;
+}
+
+.lightning-top-two {
+   left: 75px;
+}
+
+.lightning-top-three {
+   left: 90px;
+}
+
+
+.lightning-middle {
+   position: absolute;
+   top: 80px;
+   left: 55px;
+   background: white;
+   width: 10px;
+   height: 3px;
+   border-radius: 2px;
+}
+
+.lightning-middle-v2 {
+   position: absolute;
+   top: 85%;
+   left: 40%;
+   background: white;
+   width: 5px;
+   height: 2px;
+   border-radius: 2px;
+}
+
+.lightning-middle-two {
+   left: 70px;
+}
+
+.lightning-middle-three {
+   left: 85px;
+}
+
+.lightning-bottom {
+   position: absolute;
+   top: 81px;
+   left: 58px;
+   background: white;
+   width: 3px;
+   height: 12px;
+   transform: rotate(-30deg);
+   border-radius: 2px;
+}
+
+.lightning-bottom-two {
+   left: 73px;
+}
+
+.lightning-bottom-three {
+   left:88px;
+}
+
+.upper-container {
+   width: 100%;
+   height: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.info-container {
+   width: 50%;
+   height: 100%;
+   position: relative;
+}
+
+
+.degree-container {
+   width: 40%;
+   height: 100%;
+}
+
+.bottom-container {
+   width: 88%;
+   margin-left: 7%;
+   height: 50%;
+   position: relative;
+   overflow: hidden;
+}
+
+.city {
+   font-weight: 400;
+   margin: 35px  0 0 15px;
+}
+
+.date {
+   font-size: 0.85rem;
+   margin-left: 15px;
+}
+
+.description {
+   font-size: 1.1rem;
+   margin-left: 10px;
+   margin-top:10px;
+}
+
+.current {
+   font-size: 6rem;
+   text-align: center;
+   position: relative;
+   margin-top: 12px;
+   cursor: pointer;
+   margin-left: -40px;
+}
+
+.current span {
+   font-size: 4rem;
+   position: absolute;
+}
+
+.sign {
+   font-size: 2rem;
+   top: 20%;
+   right: 10%;
+}
+
+.max-min {
+   position: relative;
+   font-size: 2rem;
+   text-align: center;
+   font-weight: lighter;
+   margin-top: 0px;
+   margin-left: 40px;
+}
+
+.search-bar-container {
+   position: relative;
+}
+
+.search-bar {
+   border:none;
+   background: transparent;
+   margin-left: 35px;
+   border-bottom: 1px solid white;
+   color: white;
+   -webkit-appearance: none;
+   outline: none;
+}
+
+.fa-search {
+   position: absolute;
+   right: 2%;
+   font-size: 0.7rem;
+   top: 10%;
+}
+
+.date-container {
+   margin-top: 30px;
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.date-container p {
+   cursor: pointer;
+   margin-right: 15px;
+   font-size: 0.8rem;
+}
+
+hr {
+   border: 1px solid rgb(190, 190, 190);
+}
+
+.indicator {
+   width: 42px;
+   height: 3px;
+   background: white;
+   border-radius: 1px;
+   position: absolute;
+   margin-top: -3px;
+   transition: 0.5s;
+}
+
+.info-container-two {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   position: relative;
+   margin-left: -100%;
+   transition: 0.5s;
+}
+
+.hourly-container {
+   display: flex;
+   width: 100%;
+   height: 100px;
+   position: absolute;
+}
+
+.hour-info-wrapper {
+   width: 15%;
+   height: 80%;
+   margin-top: 10px;
+   margin-right: 5px;
+   margin-left: 5px;
+}
+
+.hour-info-wrapper h4 {
+   text-align: center;
+}
+
+.hour-info-wrapper p {
+   text-align: center;
+}
+
+.daily-container {
+   display: flex;
+   width: 100%;
+   height: 100px;
+   position: absolute;
+   left: 100%;
+}
+
+.dialy-info-wrapper {
+   width: 17%;
+   height: 80%;
+   margin-top: 15px;
+   margin-right: 5px;
+   margin-left: 5px;
+}
+
+.dialy-info-wrapper h4 {
+   text-align: center;
+}
+
+.dialy-info-wrapper p {
+   text-align: center;
+}
+
+.details-container {
+   /* display: flex; */
+   width: 100%;
+   height: 100px;
+   position: absolute;
+   left: 200%;
+}
+
+.details-container p {
+   margin: 5px;
+}
