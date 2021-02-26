@@ -27,7 +27,7 @@ let maxC = 0;
 let maxF = 0;
 let minC = 0;
 let minF = 0;
-let city = 'tbilisi';
+let city = 'moscow';
 let hourlyC = [0, 0, 0, 0, 0, 0]
 let hourlyF = [0, 0, 0, 0, 0, 0]
 let dailyC = [tempC, 0, 0];
@@ -137,7 +137,6 @@ getDate()
 
 function generateDetails(response) {
    let info = response.current;
-   console.log(info)
    detailsC.querySelector('.humidity').textContent = `Humidity: ${info.humidity}Rh`
    detailsC.querySelector('.wind-deg').textContent = `Wind degree: ${info.wind_degree}°`
    detailsC.querySelector('.wind-speed').textContent = `Wind Speed: ${info.wind_kph}km/h`
@@ -258,12 +257,12 @@ function generateDailySkycon(response) {
                <div class="c-v2"></div>
                `
             break;
-         case 'Sunny':
+         case 'Sunny': case "Clear":
             dailySkycons[i].innerHTML = `
             <div class="sun-v2"></div>
             `
             break;
-         case 'Mist', 'Overcast':
+         case 'Mist', 'Overcast', 'Light rain':
             dailySkycons[i].innerHTML = `
                <div class="a-v2"></div>
                <div class="b-v2"></div>
@@ -320,12 +319,12 @@ function generateHourlySkycon(response) {
                <div class="c-v2"></div>
                `
             break;
-         case 'Sunny':
+         case 'Sunny': case "Clear":
             skycons[i].innerHTML = `
             <div class="sun-v2"></div>
             `
             break;
-         case 'Mist', 'Overcast':
+         case 'Mist': case 'Overcast': case "Light rain":
             skycons[i].innerHTML = `
                <div class="a-v2"></div>
                <div class="b-v2"></div>
@@ -361,12 +360,12 @@ function getIcon() {
          <div class="c"></div>
          `
          break;
-      case 'Sunny':
+      case 'Sunny': case 'Clear':
          skycon.innerHTML = `
          <div class="sun"></div>
          `
          break;
-      case 'Mist', 'Overcast':
+      case 'Mist': case 'Overcast': case "Light rain":
          skycon.innerHTML = `
          <div class="a"></div>
          <div class="b"></div>

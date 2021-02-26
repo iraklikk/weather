@@ -454,7 +454,7 @@ hr {
    display: flex;
    flex-wrap: wrap;
    position: relative;
-   margin-left: -100%;
+   margin-left: 0;
    transition: 0.5s;
 }
 
